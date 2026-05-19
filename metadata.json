@@ -1,0 +1,6 @@
+{
+  "name": "FreeAI Hub",
+  "description": "A curated directory of 100% free AI tools and agents, organized by category with real-time search and filtering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

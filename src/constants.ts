@@ -1,0 +1,136 @@
+import { Category, Tool } from './types';
+
+export const CATEGORIES: Category[] = [
+  { id: 'vibe-coding', name: 'Vibe & No-Code', icon: 'zap' },
+  { id: 'coding', name: 'Dev Tools', icon: 'code' },
+  { id: 'chatbots', name: 'LLMs & Chat', icon: 'message-square' },
+  { id: 'image', name: 'Image & Design', icon: 'image' },
+  { id: 'video', name: 'Video & Motion', icon: 'video' },
+  { id: 'audio', name: 'Audio & Music', icon: 'music' },
+  { id: 'writing', name: 'Content & Copy', icon: 'edit-3' },
+  { id: 'research', name: 'Deep Research', icon: 'search' },
+  { id: 'voice', name: 'Voice & Speech', icon: 'mic' },
+  { id: 'automation', name: 'Agents & Tasks', icon: 'cpu' },
+];
+
+export const TOOLS: Tool[] = [
+  // Category 1: Vibe Coding & No-Code Web Builders
+  { id: 'antigravity', name: 'Google Antigravity', description: 'Agent-first IDE for unlimited tab completions and multi-agent code orchestration.', url: 'https://cloud.google.com', categoryId: 'vibe-coding' },
+  { id: 'framer', name: 'Framer AI', description: 'Design and deploy animated responsive websites directly from text prompts.', url: 'https://www.framer.com', categoryId: 'vibe-coding' },
+  { id: 'teleporthq', name: 'Teleporthq', description: 'Low-code platform with AI generation that exports clean React/Vue code.', url: 'https://teleporthq.io', categoryId: 'vibe-coding' },
+  { id: 'dora', name: 'Dora AI', description: 'Generates complex 3D web layouts and advanced animations from a single text line.', url: 'https://www.dora.run', categoryId: 'vibe-coding' },
+  { id: 'webwave', name: 'Webwave', description: 'Creates custom websites matching your brand via conversational text prompts.', url: 'https://webwave.me', categoryId: 'vibe-coding' },
+  { id: 'site123', name: 'Site123', description: 'Instantly builds structured websites from basic text descriptions.', url: 'https://www.site123.com', categoryId: 'vibe-coding' },
+  { id: 'pineapple', name: 'Pineapple Builder', description: 'Quickly spawns blogs and professional landing pages with pre-configured SEO.', url: 'https://www.pineapplebuilder.com', categoryId: 'vibe-coding' },
+  { id: 'buttafly', name: 'Buttafly', description: 'AI-powered layout tool that structures dynamic portfolios and lightweight apps.', url: 'https://buttafly.com', categoryId: 'vibe-coding' },
+  { id: 'relume', name: 'Relume AI', description: 'Builds detailed sitemaps and wireframes exportable into Figma or Webflow.', url: 'https://www.relume.io', categoryId: 'vibe-coding' },
+  { id: 'ycode', name: 'Ycode', description: 'Visually design database-driven web applications with AI assistance.', url: 'https://www.ycode.com', categoryId: 'vibe-coding' },
+
+  // Category 2: AI Coding Assistants & Developer Tools
+  { id: 'gemini-assist', name: 'Gemini Assist', description: 'Google\'s development assistant with real-time code completions inside IDEs.', url: 'https://cloud.google.com', categoryId: 'coding' },
+  { id: 'blackbox', name: 'Blackbox AI', description: 'Fast autocomplete plugin that converts technical prompts into copy-pasteable code.', url: 'https://www.blackbox.ai', categoryId: 'coding' },
+  { id: 'bito', name: 'Bito AI', description: 'Integrates code explanations, security scanning, and test generation into VS Code.', url: 'https://bito.ai', categoryId: 'coding' },
+  { id: 'double', name: 'Double.bot', description: 'Localized context extension tracking structural dependencies for precise refactoring.', url: 'https://www.double.bot', categoryId: 'coding' },
+  { id: 'mutable', name: 'MutableAI', description: 'Analyzes multi-file repositories to output structural wiki documentation.', url: 'https://mutable.ai', categoryId: 'coding' },
+  { id: 'mintlify', name: 'Mintlify', description: 'Automated documentation engine that outputs beautiful developer guides.', url: 'https://mintlify.com', categoryId: 'coding' },
+  { id: 'warp', name: 'Warp AI', description: 'Terminal interface incorporating commands and troubleshooting within the console.', url: 'https://www.warp.dev', categoryId: 'coding' },
+  { id: 'codiga', name: 'Codiga', description: 'Real-time static analysis engine that flags bugs and security risks as you type.', url: 'https://www.codiga.io', categoryId: 'coding' },
+  { id: 'refact', name: 'Refact AI', description: 'Self-hosted or cloud assistant tracking syntax for fast multi-line completions.', url: 'https://refact.ai', categoryId: 'coding' },
+  { id: 'pieces', name: 'Pieces', description: 'Intelligent mini-repository that extracts snippet contexts and explains code clips.', url: 'https://pieces.app', categoryId: 'coding' },
+
+  // Category 3: Reasoning, Chatbots & LLMs
+  { id: 'meta-ai', name: 'Meta AI', description: 'Assistant running Llama models capable of reasoning, text generation, and web search.', url: 'https://www.meta.ai', categoryId: 'chatbots' },
+  { id: 'ai-studio', name: 'AI Studio', description: 'Direct testing playground offering free API access to Gemini models.', url: 'https://aistudio.google.com', categoryId: 'chatbots' },
+  { id: 'cohere', name: 'Cohere Coral', description: 'Enterprise-optimized chatbot for long-context document synthesis and analysis.', url: 'https://cohere.com', categoryId: 'chatbots' },
+  { id: 'komo', name: 'Komo AI', description: 'High-speed search engine parsing active web data to summarize concepts.', url: 'https://komo.ai', categoryId: 'chatbots' },
+  { id: 'brave-leo', name: 'Brave Leo', description: 'Privacy-respecting browser companion that analyzes articles and answers queries.', url: 'https://brave.com/leo', categoryId: 'chatbots' },
+  { id: 'duckduckgo', name: 'DuckDuckGo AI', description: 'Anonymous terminal routing queries through popular open models without tracking.', url: 'https://duckduckgo.com', categoryId: 'chatbots' },
+  { id: 'lmsys', name: 'Chatbot Arena', description: 'Crowd-sourced benchmark platform for testing side-by-side responses from open LLMs.', url: 'https://chat.lmsys.org', categoryId: 'chatbots' },
+  { id: 'perplexity-labs', name: 'Perplexity Labs', description: 'Testing interface delivering unmetered access to experimental open weights.', url: 'https://labs.perplexity.ai', categoryId: 'chatbots' },
+  { id: 'vanna', name: 'Vanna AI', description: 'Open-source framework converting natural language directly into valid SQL queries.', url: 'https://vanna.ai', categoryId: 'chatbots' },
+  { id: 'openrouter', name: 'OpenRouter', description: 'Aggregates hundreds of open-source models under a single interface.', url: 'https://openrouter.ai', categoryId: 'chatbots' },
+
+  // Category 4: Image Generation & Vector Design
+  { id: 'recraft', name: 'Recraft AI', description: 'Professional design tool for visual vector graphics, logos, and custom icons.', url: 'https://www.recraft.ai', categoryId: 'image' },
+  { id: 'canva-magic', name: 'Canva Magic', description: 'Presentation engine that sets up design layouts and slide templates from prompts.', url: 'https://www.canva.com', categoryId: 'image' },
+  { id: 'nightcafe', name: 'NightCafe', description: 'Daily loyalty credit system granting access to multiple diffusion algorithms.', url: 'https://creator.nightcafe.studio', categoryId: 'image' },
+  { id: 'fotor', name: 'Fotor AI', description: 'Web utility combining prompt-to-image synthesis with photo restoration tools.', url: 'https://www.fotor.com', categoryId: 'image' },
+  { id: 'adobe-express', name: 'Adobe Express', description: 'Cloud designer with background removal and social asset generators.', url: 'https://www.adobe.com/express', categoryId: 'image' },
+  { id: 'artbreeder', name: 'Artbreeder', description: 'Uses genetic blending to combine multiple source traits into unique character faces.', url: 'https://www.artbreeder.com', categoryId: 'image' },
+  { id: 'pixray', name: 'Pixray', description: 'Pixel art and abstract illustration generator translating text into retro styles.', url: 'https://pixray.gob.io', categoryId: 'image' },
+  { id: 'deepai-img', name: 'DeepAI', description: 'Minimalist image generator built for quickly testing concept art variations.', url: 'https://deepai.org', categoryId: 'image' },
+  { id: 'polarr', name: 'Polarr Copilot', description: 'Text-driven lighting filter assistant that builds complex photo grading styles.', url: 'https://www.polarr.com', categoryId: 'image' },
+  { id: 'photoroom', name: 'Photoroom', description: 'Product marketing studio that generates realistic studio lighting for items.', url: 'https://www.photoroom.com', categoryId: 'image' },
+
+  // Category 5: Video Editing & Motion Generation
+  { id: 'invideo', name: 'Invideo AI', description: 'Automatically compiles footage, voiceovers, and captions from a script.', url: 'https://invideo.io', categoryId: 'video' },
+  { id: 'kling', name: 'Kling AI', description: 'Generate cinematic video clips featuring realistic physics and motion control.', url: 'https://klingai.com', categoryId: 'video' },
+  { id: 'wan', name: 'Wan AI', description: 'Open-source framework generating high-fidelity loops and character sequences.', url: 'https://wan-video.github.io', categoryId: 'video' },
+  { id: 'capcut', name: 'CapCut AI', description: 'Editor with speech-to-subtitle creation and dynamic video motion tracking.', url: 'https://www.capcut.com', categoryId: 'video' },
+  { id: 'heygen', name: 'HeyGen', description: 'Generates short, highly realistic digital avatar videos with lip-syncing.', url: 'https://www.heygen.com', categoryId: 'video' },
+  { id: 'synthesia-free', name: 'Synthesia', description: 'Conversational script tool that renders presentation videos with AI presenters.', url: 'https://www.synthesia.io', categoryId: 'video' },
+  { id: 'veed', name: 'Veed.io', description: 'Browser-based editor with audio noise reduction and active auto-transcription.', url: 'https://www.veed.io', categoryId: 'video' },
+  { id: 'descript-free', name: 'Descript', description: 'Unlock video editing by modifying text transcripts directly.', url: 'https://www.descript.com', categoryId: 'video' },
+  { id: 'clipchamp', name: 'Clipchamp', description: 'Built-in Windows editor with smart multi-language text-to-speech rendering.', url: 'https://clipchamp.com', categoryId: 'video' },
+  { id: 'plask', name: 'Plask', description: 'Webcam-driven motion capture tool for animating 3D characters.', url: 'https://plask.ai', categoryId: 'video' },
+
+  // Category 6: Music, Sound Effects & Audio Engineering
+  { id: 'hume', name: 'Hume AI', description: 'Empathetic voice playground that analyzes vocal tone dynamics for speech.', url: 'https://www.hume.ai', categoryId: 'audio' },
+  { id: 'beatoven', name: 'Beatoven.ai', description: 'Generates royalty-free ambient music customized by mood and genre.', url: 'https://www.beatoven.ai', categoryId: 'audio' },
+  { id: 'lalal', name: 'LALAL.AI', description: 'Vocal isolation tool separating vocals, drums, and instruments from any track.', url: 'https://www.lalal.ai', categoryId: 'audio' },
+  { id: 'bandlab', name: 'BandLab', description: 'Instantly cooks up beat loops, synth progressions, and musical ideas.', url: 'https://www.bandlab.com', categoryId: 'audio' },
+  { id: 'splash', name: 'Splash Music', description: 'Tools enabling users to generate vocal shorthands and energetic backing tracks.', url: 'https://www.splashmusic.com', categoryId: 'audio' },
+  { id: 'boomy-music', name: 'Boomy', description: 'Automates full pop and electronic track arranging with zero experience.', url: 'https://boomy.com', categoryId: 'audio' },
+  { id: 'melodrive', name: 'Melodrive', description: 'Real-time audio engine that builds dynamic soundtracks for video or games.', url: 'https://melodrive.com', categoryId: 'audio' },
+  { id: 'voicemod', name: 'Voicemod', description: 'Live voice transformation matrix providing unique vocal effects for calls.', url: 'https://www.voicemod.net', categoryId: 'audio' },
+  { id: 'audiocraft', name: 'AudioCraft', description: 'Meta\'s open-source matrix generating sound effects and instrumentation.', url: 'https://github.com/facebookresearch/audiocraft', categoryId: 'audio' },
+  { id: 'amper', name: 'Amper Music', description: 'Quick orchestration generator designed to stitch soundtracks to video.', url: 'https://www.shutterstock.com/g/amper-music', categoryId: 'audio' },
+
+  // Category 7: Copywriting, Editing & Content Marketing
+  { id: 'anyword', name: 'Anyword', description: 'Performance marketing editor that scores copy drafts based on predictions.', url: 'https://anyword.com', categoryId: 'writing' },
+  { id: 'wordtune-edit', name: 'Wordtune', description: 'Inline widget offering alternative phrasing options to clean up sentences.', url: 'https://www.wordtune.com', categoryId: 'writing' },
+  { id: 'languagetool', name: 'LanguageTool', description: 'Open-source grammar checker supporting 25+ languages.', url: 'https://languagetool.org', categoryId: 'writing' },
+  { id: 'prowritingaid', name: 'ProWritingAid', description: 'In-depth style analyst reporting structural repetition and style inconsistencies.', url: 'https://prowritingaid.com', categoryId: 'writing' },
+  { id: 'deepl-write', name: 'DeepL Write', description: 'Refinement engine focused on fixing complex grammar and optimizing tone.', url: 'https://www.deepl.com/write', categoryId: 'writing' },
+  { id: 'hoppycopy', name: 'Hoppy Copy', description: 'Generates email sequences, product launches, and ad concepts.', url: 'https://www.hoppycopy.co', categoryId: 'writing' },
+  { id: 'paragraphai', name: 'ParagraphAI', description: 'Companion that instantly drafts contextual email responses.', url: 'https://paragraphai.com', categoryId: 'writing' },
+  { id: 'simplified-content', name: 'Simplified', description: 'Multitool blending blog layout generators and visual layouts.', url: 'https://simplified.com', categoryId: 'writing' },
+  { id: 'hemingway', name: 'Hemingway Plus', description: 'Highlights complex sentences and splits dense paragraphs into readable prose.', url: 'https://hemingwayapp.com', categoryId: 'writing' },
+  { id: 'smartwriter', name: 'SmartWriter', description: 'Scans LinkedIn profile details to generate personalized icebreaker emails.', url: 'https://www.smartwriter.ai', categoryId: 'writing' },
+
+  // Category 8: Academic Research & Deep Knowledge Engines
+  { id: 'humata', name: 'Humata AI', description: 'Extracts instant answers anchored directly to matching document source pages.', url: 'https://www.humata.ai', categoryId: 'research' },
+  { id: 'gamma', name: 'Gamma App', description: 'Generates beautiful presentation decks and briefs from a single outline prompt.', url: 'https://gamma.app', categoryId: 'research' },
+  { id: 'napkin', name: 'Napkin AI', description: 'Instantly converts raw text lines into clean visual diagrams and flowcharts.', url: 'https://www.napkin.ai', categoryId: 'research' },
+  { id: 'openread', name: 'OpenRead', description: 'Interactive research workspace providing smart visualization for references.', url: 'https://www.openread.academy', categoryId: 'research' },
+  { id: 'dimensions-research', name: 'Dimensions', description: 'Connected research matrix linking publications and clinical trials.', url: 'https://www.dimensions.ai', categoryId: 'research' },
+  { id: 'scite', name: 'Scite.ai', description: 'Quantifies research validation by showing if follow-up papers confirm claims.', url: 'https://scite.ai', categoryId: 'research' },
+  { id: 'litmaps', name: 'Litmaps', description: 'Maps visual citation networks across thousands of research papers.', url: 'https://www.litmaps.com', categoryId: 'research' },
+  { id: 'researchrabbit', name: 'ResearchRabbit', description: 'Discovery engine that constructs visual discovery paths for saved papers.', url: 'https://www.researchrabbit.ai', categoryId: 'research' },
+  { id: 'genei-research', name: 'Genei', description: 'Extracts key data points and figures from large folders of study documents.', url: 'https://www.genei.io', categoryId: 'research' },
+  { id: 'chatpdf-tool', name: 'ChatPDF', description: 'Streamlined interface for chatting directly with large reference manuals.', url: 'https://www.chatpdf.com', categoryId: 'research' },
+
+  // Category 9: Voice, Speech Transcription & Podcasting
+  { id: 'otter', name: 'Otter.ai', description: 'Automatically records live meetings and generates action items from conversations.', url: 'https://otter.ai', categoryId: 'voice' },
+  { id: 'fireflies', name: 'Fireflies.ai', description: 'Calendar-linked bot that joins calls to transcribe dialogue and summarize.', url: 'https://fireflies.ai', categoryId: 'voice' },
+  { id: 'adobe-podcast', name: 'Adobe Podcast', description: 'Erases heavy background noise and echo from muddy microphone recordings.', url: 'https://podcast.adobe.com/enhance', categoryId: 'voice' },
+  { id: 'macwhisper', name: 'MacWhisper', description: 'Local desktop app running OpenAI\'s Whisper for unlimited private transcription.', url: 'https://whisper-menu.com', categoryId: 'voice' },
+  { id: 'granola', name: 'Granola', description: 'AI meeting notepad translating raw spoken audio into professional documentation.', url: 'https://granola.so', categoryId: 'voice' },
+  { id: 'riverside-free', name: 'Riverside.fm', description: 'Direct browser utility providing rapid multi-language speech-to-text.', url: 'https://riverside.fm/transcription', categoryId: 'voice' },
+  { id: 'resemble', name: 'Resemble AI', description: 'Voice synthesis studio focusing on natural audio inflections from text inputs.', url: 'https://www.resemble.ai', categoryId: 'voice' },
+  { id: 'lovo-free', name: 'Lovo AI', description: 'Diverse voice library supplying highly expressive character accents.', url: 'https://lovo.ai', categoryId: 'voice' },
+  { id: 'krisp-tool', name: 'Krisp', description: 'Filters background noise and keyboard typing out of your microphone stream.', url: 'https://krisp.ai', categoryId: 'voice' },
+  { id: 'swellcx', name: 'Swell CX', description: 'Voice analytics suite that transcribes interactions and extracts sentiment.', url: 'https://www.swellcx.com', categoryId: 'voice' },
+
+  // Category 10: Task Automation, Project Management & Smart Agents
+  { id: 'lindy', name: 'Lindy AI', description: 'Constructs autonomous AI assistants for email triage and calendar booking.', url: 'https://www.lindy.ai', categoryId: 'automation' },
+  { id: 'botpress-tool', name: 'Botpress', description: 'Chatbot construction platform loaded with visual logic flows and APIs.', url: 'https://botpress.com', categoryId: 'automation' },
+  { id: 'taskade-agent', name: 'Taskade', description: 'Combines team task spaces with multi-agent templates for project roadmaps.', url: 'https://www.taskade.com', categoryId: 'automation' },
+  { id: 'scribehow', name: 'Scribe', description: 'Observes screen activity to instantly map out fully annotated user guides.', url: 'https://scribehow.com', categoryId: 'automation' },
+  { id: 'mindstudio', name: 'MindStudio', description: 'No-code platform allowing you to customize multi-model enterprise agents.', url: 'https://www.mindstudio.ai', categoryId: 'automation' },
+  { id: 'reclaim', name: 'Reclaim AI', description: 'Calendar assistant that reschedules habits and focus blocks around shifts.', url: 'https://reclaim.ai', categoryId: 'automation' },
+  { id: 'clockwise-tool', name: 'Clockwise', description: 'Optimizes team schedules by dynamically shifting events to create focus time.', url: 'https://www.getclockwise.com', categoryId: 'automation' },
+  { id: 'bardeen-auto', name: 'Bardeen', description: 'Screen-level automation extension that triggers cross-app data routing.', url: 'https://www.bardeen.ai', categoryId: 'automation' },
+  { id: 'levity', name: 'Levity AI', description: 'No-code solution designed to trigger data pipelines from incoming files.', url: 'https://levity.ai', categoryId: 'automation' },
+  { id: 'loopin', name: 'Loopin AI', description: 'Conversational project workspace that constructs automated recap briefs.', url: 'https://www.loopin.ai', categoryId: 'automation' },
+];
